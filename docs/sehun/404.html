@@ -1,12 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/mini-project/sehun/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>my-app</title>
-    <script type="module" crossorigin src="/mini-project/sehun/assets/index-Db5Pch4Z.js"></script>
-    <link rel="stylesheet" crossorigin href="/mini-project/sehun/assets/index-Dgp1xDVJ.css">
+    <script
+      type="module"
+      crossorigin
+      src="/mini-project/sehun/assets/index-Db5Pch4Z.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="/mini-project/sehun/assets/index-Dgp1xDVJ.css"
+    />
+    <script>
+      // GitHub Pages SPA redirect handler
+      const segment = "/mini-project/sehun";
+      const redirect = window.location.pathname;
+      if (!redirect.startsWith(segment)) {
+        // fallback to base path if somehow out of route
+        window.location.replace(segment + "/");
+      } else {
+        // 실제 라우트 경로 추출 후 index.html로 리다이렉트
+        const target = redirect.replace(segment, "");
+        sessionStorage.redirect =
+          target + window.location.search + window.location.hash;
+        window.location.replace(segment + "/");
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>
