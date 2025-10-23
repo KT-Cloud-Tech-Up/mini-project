@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.69c81a16.css",
-    "main.js": "/static/js/main.0227e11a.js",
-    "index.html": "/index.html",
-    "main.69c81a16.css.map": "/static/css/main.69c81a16.css.map",
-    "main.0227e11a.js.map": "/static/js/main.0227e11a.js.map"
+    "main.css": "/mini-project/sungwoo/static/css/main.69c81a16.css",
+    "main.js": "/mini-project/sungwoo/static/js/main.5bb96686.js",
+    "index.html": "/mini-project/sungwoo/index.html",
+    "main.69c81a16.css.map": "/mini-project/sungwoo/static/css/main.69c81a16.css.map",
+    "main.5bb96686.js.map": "/mini-project/sungwoo/static/js/main.5bb96686.js.map"
   },
   "entrypoints": [
     "static/css/main.69c81a16.css",
-    "static/js/main.0227e11a.js"
+    "static/js/main.5bb96686.js"
   ]
 }
